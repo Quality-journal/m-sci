@@ -3814,6 +3814,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -3829,6 +3836,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3918,18 +3941,104 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      names: ' ',
-      email: ' ',
-      message: ' '
+      names: " ",
+      email: " ",
+      message: " "
     };
   },
   methods: {
-    submitForm: function submitForm(event) {// alert( event.target);
-      // event.target.submit();
-    }
+    submitForm: function submitForm(event) {}
   }
 });
 
@@ -3946,6 +4055,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4096,6 +4223,95 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4154,21 +4370,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       slides: [{
-        img: "/images/img2.jpg",
-        title: "Guide to CNC Machining Tolerances",
-        mark: "Monitoring & Safety"
+        img: "/images/maintenance.jpg",
+        title: "Maintenance within physical asset management"
       }, {
-        img: "/images/img3.jpg",
-        title: "All About Sheet Metal",
-        mark: "Materials"
+        img: "/images/maintenance-management.jpg",
+        title: "Maintenance management"
       }, {
         img: "/images/img4.jpg",
-        title: "From Computer Programming to Physical Products",
-        mark: "Programming"
+        title: "Maintainability"
+      }, {
+        img: "/images/maintenance.jpg",
+        title: "Health, safety & environment in maintenance"
+      }, {
+        img: "/images/maintenance-management.jpg",
+        title: "Maintenance engineering techniques"
+      }, {
+        img: "/images/img4.jpg",
+        title: "Maintenance support"
       }],
       current: 0,
       percent: 0,
@@ -4195,11 +4419,11 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
-    selectSlide: function selectSlide(i) {
+    /*selectSlide(i) {
       this.current = i;
       this.playslides[this.current % 2] = this.slides[this.current];
       this.resetPlay();
-    },
+    },*/
     process: function process() {
       this.current++;
 
@@ -4210,10 +4434,11 @@ __webpack_require__.r(__webpack_exports__);
       this.playslides[this.current % 2] = this.slides[this.current];
       this.resetPlay();
     },
-    going: function going() {
-      var time = new Date().getTime();
-      this.percent = Math.floor(100 * (time - this.timer) / this.duration);
-    },
+
+    /*going() {
+      let time = new Date().getTime();
+      this.percent = Math.floor((100 * (time - this.timer)) / this.duration);
+    },*/
     resetPlay: function resetPlay() {
       clearInterval(this.interval);
       clearInterval(this.progress);
@@ -4260,7 +4485,11 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   data: function data() {
     return {
       toggle: false,
-      toggleIssues: false
+      toggleIssues0: false,
+      toggleIssues1: false,
+      toggleIssues2: false,
+      toggleIssues3: false,
+      toggleIssues4: false
     };
   }
 });
@@ -4319,7 +4548,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.formdiv[data-v-76db242e] {\n  background:#f5f5fa;\n}\n\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.formdiv[data-v-76db242e] {\n  background: #f5f5fa;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4343,7 +4572,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.bg-color{\n    background-color: #FA5F1A;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.bg-color {\n  background-color: #fa5f1a;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4391,7 +4620,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\r\n  position: relative;\r\n  z-index: 1;\r\n  overflow: hidden;\r\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\r\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n  transition: top 800ms;\n}\n.slider ul.slides li[data-v-872262e8] {\r\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\r\n  height: 100%;\r\n  background-size: cover;\r\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\r\n  position: absolute;\r\n  padding-right: 40px;\r\n  right: 0;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  z-index: 2;\r\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\r\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\r\n  position: relative;\r\n  margin-bottom: 16px;\r\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\r\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\r\n  color: #fff;\r\n  cursor: pointer;\r\n  font-size: 16px;\r\n  font-family: 'Poppins';\r\n  transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\r\n  color: #fff;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\r\n  position: absolute;\r\n  top: 50%;\r\n  right: -20px;\r\n  margin-top: -5.5px;\r\n  margin-left: 10px;\r\n  width: 11px;\r\n  height: 11px;\r\n  background: #fff;\r\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\r\n  position: relative;\r\n  display: inline-block;\r\n  width: 100%;\r\n  height: 2px;\r\n  margin: 8px 0;\r\n  background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-872262e8] {\r\n  transition: font-size 0.6s ease-in;\r\n  font-size: 36px;\r\n  font-family: 'Poppins';\n}\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\r\n  height: 100%;\r\n  background: #fff;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.slider[data-v-872262e8] {\n  position: relative;\n  z-index: 1;\n  overflow: hidden;\n  height: 70vh;\n}\n.slider ul[data-v-872262e8] {\n  list-style: none;\n}\n.slider ul.slides[data-v-872262e8] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\n.slider ul.slides li[data-v-872262e8] {\n  height: 100%;\n}\n.slider ul.slides li .img[data-v-872262e8] {\n  height: 100%;\n  background-size: cover;\n  background-position: 50%;\n}\n.slider ul.indicators[data-v-872262e8] {\n  position: absolute;\n  padding-right: 40px;\n  right: 0;\n  top: 25%;\n  z-index: 2;\n  text-align: right;\n}\n.slider ul.indicators li[data-v-872262e8] {\n  clear: both;\n}\n.slider ul.indicators li .item[data-v-872262e8] {\n  position: relative;\n  margin-bottom: 16px;\n  float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-872262e8] {\n  margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-872262e8] {\n  color: #fff;\n  font-size: 16px;\n  font-family: \"Poppins\";\n}\n.slider ul.indicators li .mark[data-v-872262e8] {\n  color: #fff;\n  font-family: \"Poppins\";\n}\n.slider ul.indicators li .dot[data-v-872262e8] {\n  position: absolute;\n  top: 50%;\n  right: -20px;\n  margin-top: -5.5px;\n  margin-left: 10px;\n  width: 11px;\n  height: 11px;\n  background: #fff;\n  border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-872262e8] {\n  position: relative;\n  display: inline-block;\n  width: 100%;\n  height: 2px;\n  margin: 8px 0;\n  background: rgba(255, 255, 255, 0.5);\n}\n/*.slider ul.indicators li.active .title {\n  font-size: 36px;\n  font-family: \"Poppins\";\n}*/\n.slider ul.indicators li.active .progress .fill[data-v-872262e8] {\n  height: 100%;\n  background: #fff;\n}\n@media only screen and (max-width: 600px) {\n.slider ul.indicators li .title[data-v-872262e8] {\n    font-size: 12px;\n}\n.slider ul.indicators[data-v-872262e8] {\n    position: absolute;\n    padding-right: 40px;\n    right: 0;\n    top: 15%;\n    z-index: 2;\n    text-align: right;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -22831,41 +23060,38 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white" },
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5"
-          },
-          [
-            _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4 p-2" }, [
-              _vm._v("About the journal")
-            ]),
-            _c("hr"),
+    return _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8 bg-white" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-5"
+        },
+        [
+          _c("h1", { staticClass: "text-2xl font-semibold mt-2 pb-4 p-2" }, [
+            _vm._v("About the journal")
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("div", { staticClass: "flex flex-wrap py-4" }, [
+            _c(
+              "div",
+              { staticClass: "w-full sm:w-1/4 px-4 bg-gray-200 py-2" },
+              [_c("p", {}, [_vm._v("Blok levo")])]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "flex flex-wrap py-4" }, [
-              _c(
-                "div",
-                { staticClass: "w-full sm:w-1/4 px-4 bg-gray-200 py-2" },
-                [_c("p", {}, [_vm._v("Blok levo")])]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "w-full sm:w-3/4 px-8" }, [
-                _c("p", { staticClass: "text-lg" }, [
-                  _vm._v(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                  )
-                ])
+            _c("div", { staticClass: "w-full sm:w-3/4 px-8" }, [
+              _c("p", { staticClass: "text-lg" }, [
+                _vm._v(
+                  "\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do\n          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n          aliquip ex ea commodo consequat. Duis aute irure dolor in\n          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n          culpa qui officia deserunt mollit anim id est laborum.\n        "
+                )
               ])
             ])
-          ]
-        )
-      ]
-    )
+          ])
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -22890,131 +23116,120 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 bg-white" },
-    [
-      _c(
-        "div",
-        {
-          staticClass:
-            "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
-        },
-        [
+  return _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8 bg-white" }, [
+    _c(
+      "div",
+      {
+        staticClass: "bg-white overflow-hidden shadow-sm sm:rounded-lg py-5 p-6"
+      },
+      [
+        _c(
+          "h1",
+          {
+            staticClass: "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
+          },
+          [_vm._v("\n      Contact\n    ")]
+        ),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex flex-wrap py-4" }, [
           _c(
-            "h1",
-            {
-              staticClass:
-                "text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500"
-            },
-            [_vm._v("Contact")]
+            "div",
+            { staticClass: "w-full sm:w-2/3 mb-5" },
+            [_c("contact-form-component")],
+            1
           ),
-          _c("hr"),
           _vm._v(" "),
-          _c("div", { staticClass: "flex flex-wrap py-4" }, [
+          _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
             _c(
-              "div",
-              { staticClass: "w-full sm:w-2/3 mb-5" },
-              [_c("contact-form-component")],
-              1
+              "p",
+              { staticClass: "text-xl font-semibold leading-6 text-orange" },
+              [_vm._v("Publisher:")]
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "w-full sm:w-1/3 px-8 text-lg" }, [
-              _c(
-                "p",
-                { staticClass: "text-xl font-semibold leading-6 text-orange" },
-                [_vm._v("\n                    Publisher:\n                ")]
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n          IIPP"),
+              _c("br"),
+              _vm._v("\n          Institute for research"),
+              _c("br"),
+              _vm._v("\n          and design in industry"),
+              _c("br"),
+              _vm._v(
+                "\n          Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia"
               ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    UKAS"),
-                _c("br"),
-                _vm._v("\n                    Udruženje za kvalitet,"),
-                _c("br"),
-                _vm._v("\n                    akreditaciju i standardizaciju"),
-                _c("br"),
-                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-                _c("br"),
-                _vm._v("\n                    P: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "tel:+381111234567" }
-                  },
-                  [_vm._v("+381 11 1234567")]
-                ),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
-                )
-              ]),
+              _c("br"),
               _vm._v(" "),
               _c(
-                "p",
+                "a",
                 {
-                  staticClass:
-                    "text-xl font-semibold leading-6 mt-4 text-orange"
+                  staticClass: "hover:text-orange",
+                  attrs: { href: "https://www.iipp.rs" }
                 },
-                [
-                  _vm._v(
-                    "\n                    Editor in chief:\n                "
-                  )
-                ]
+                [_vm._v("www.iipp.rs")]
               ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    Miloš Vasić"),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
-                )
-              ]),
-              _vm._v(" "),
+              _c("br"),
+              _vm._v("\n          E:\n          "),
               _c(
-                "p",
+                "a",
                 {
-                  staticClass:
-                    "text-xl font-semibold leading-6 mt-4 text-orange"
+                  staticClass: "text-blue-600 hover:text-blue-800",
+                  attrs: { href: "mailto: office@q-sci.rs" }
                 },
-                [
-                  _vm._v(
-                    "\n                    Editorial office:\n                "
-                  )
-                ]
+                [_vm._v("office@q-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [_vm._v("\n          Editor in chief:\n        ")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v("\n          Nada Stanojević"),
+              _c("br"),
+              _vm._v("\n          E:\n          "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-blue-600 hover:text-blue-800",
+                  attrs: { href: "mailto: nstanojevic@m-sci.rs" }
+                },
+                [_vm._v("nstanojevic@m-sci.rs")]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              {
+                staticClass: "text-xl font-semibold leading-6 mt-4 text-orange"
+              },
+              [_vm._v("\n          Editorial office:\n        ")]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "mt-1" }, [
+              _vm._v(
+                "\n          Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia"
               ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-1" }, [
-                _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
-                _c("br"),
-                _vm._v("\n                    E: "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "text-blue-600 hover:text-blue-800",
-                    attrs: { href: "mailto: office@q-sci.rs" }
-                  },
-                  [_vm._v("office@q-sci.rs")]
-                )
-              ])
+              _c("br"),
+              _vm._v("\n          E:\n          "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-blue-600 hover:text-blue-800",
+                  attrs: { href: "mailto: office@m-sci.rs" }
+                },
+                [_vm._v("office@m-sci.rs")]
+              )
             ])
           ])
-        ]
-      )
-    ]
-  )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -23064,7 +23279,7 @@ var render = function() {
                   }
                 ],
                 staticClass:
-                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                  "\n                w-full\n                bg-white\n                rounded\n                border border-gray-300\n                focus:border-indigo-500\n                focus:ring-2 focus:ring-indigo-200\n                text-base\n                outline-none\n                text-gray-700\n                py-1\n                px-3\n                leading-8\n                transition-colors\n                duration-200\n                ease-in-out\n              ",
                 attrs: { type: "text", id: "name", name: "name", required: "" },
                 domProps: { value: _vm.names },
                 on: {
@@ -23098,7 +23313,7 @@ var render = function() {
                   }
                 ],
                 staticClass:
-                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out",
+                  "\n                w-full\n                bg-white\n                rounded\n                border border-gray-300\n                focus:border-indigo-500\n                focus:ring-2 focus:ring-indigo-200\n                text-base\n                outline-none\n                text-gray-700\n                py-1\n                px-3\n                leading-8\n                transition-colors\n                duration-200\n                ease-in-out\n              ",
                 attrs: {
                   type: "email",
                   id: "email",
@@ -23137,7 +23352,7 @@ var render = function() {
                   }
                 ],
                 staticClass:
-                  "w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out",
+                  "\n                w-full\n                bg-white\n                rounded\n                border border-gray-300\n                focus:border-indigo-500\n                focus:ring-2 focus:ring-indigo-200\n                h-32\n                text-base\n                outline-none\n                text-gray-700\n                py-1\n                px-3\n                resize-none\n                leading-6\n                transition-colors\n                duration-200\n                ease-in-out\n              ",
                 attrs: { id: "message", name: "message", required: "" },
                 domProps: { value: _vm.message },
                 on: {
@@ -23171,10 +23386,10 @@ var staticRenderFns = [
           "button",
           {
             staticClass:
-              "text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg",
+              "\n            text-white\n            bg-yellow-500\n            border-0\n            py-2\n            px-6\n            focus:outline-none\n            hover:opacity-80\n            rounded\n            text-lg\n            transition-all\n          ",
             attrs: { type: "submit" }
           },
-          [_vm._v("Send")]
+          [_vm._v("\n          Send\n        ")]
         )
       ]
     )
@@ -23202,69 +23417,82 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-blue-700 footer" }, [
-    _c(
-      "div",
-      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto" },
-      [
-        _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
-          _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
-            _c("a", { attrs: { href: "/" } }, [
-              _c(
-                "span",
-                {
-                  staticClass:
-                    "font-semibold text-xl tracking-tight px-6 md:px-0"
-                },
-                [_vm._v("Journal of Quality Engineering")]
-              )
-            ])
+  return _c("div", { staticClass: "bg-yellow-500 footer" }, [
+    _c("div", { staticClass: "mx-auto sm:px-6 text-white h-auto" }, [
+      _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
+        _c("div", { staticClass: "w-full sm:w-1/4 px-2" }, [
+          _c("a", { attrs: { href: "/" } }, [
+            _c(
+              "span",
+              {
+                staticClass: "font-semibold text-xl tracking-tight px-6 md:px-0"
+              },
+              [_vm._v("Science of maintenance")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-full sm:w-2/4 px-8 mt-4 sm:mt-0" }, [
+          _c("p", { staticClass: "font-bold" }, [
+            _vm._v("Science of maintenance")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "w-full sm:w-2/4 px-8 mt-4 sm:mt-0" }, [
-            _c("p", { staticClass: "font-bold" }, [
-              _vm._v("Journal of Quality Engineering")
+          _c("ul", { staticClass: "list-style-none mt-2" }, [
+            _c("li", [
+              _c("a", { attrs: { href: "/about" } }, [
+                _vm._v("About the journal")
+              ])
             ]),
             _vm._v(" "),
-            _c("ul", { staticClass: "list-style-none mt-2" }, [
-              _c("li", [
-                _c("a", { attrs: { href: "/browse-issues" } }, [
-                  _vm._v("Browse issues")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/instructions-for-authors" } }, [
-                  _vm._v("Instructions for authors")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/about" } }, [
-                  _vm._v("About the journal")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/submit-a-paper" } }, [
-                  _vm._v("Submit a paper")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", [
-                _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
+            _c("li", [
+              _c("a", { attrs: { href: "/browse-issues" } }, [
+                _vm._v("Browse issues")
               ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/instructions-for-authors" } }, [
+                _vm._v("Instructions for authors")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/submit-a-paper" } }, [
+                _vm._v("Submit a paper")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
             ])
-          ]),
-          _vm._v(" "),
-          _vm._m(0)
-        ])
-      ]
-    ),
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(0)
+      ])
+    ]),
     _vm._v(" "),
     _c("hr"),
     _vm._v(" "),
-    _vm._m(1)
+    _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8 text-white h-auto" }, [
+      _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-full sm:w-1/2" }, [
+          _c("p", { staticClass: "md:float-right" }, [
+            _vm._v("\n          Created by\n          "),
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-gray-800",
+                attrs: { href: "https://projectland.rs", target: "blank" }
+              },
+              [_vm._v("Projectland")]
+            )
+          ])
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -23276,13 +23504,13 @@ var staticRenderFns = [
       _c("p", { staticClass: "font-bold" }, [_vm._v("Contact")]),
       _vm._v(" "),
       _c("p", { staticClass: "mt-2" }, [
-        _vm._v("\n                    UKAS"),
+        _vm._v("\n          IIPP"),
         _c("br"),
-        _vm._v("\n                    Udruženje za kvalitet,"),
+        _vm._v("\n          Institute for research"),
         _c("br"),
-        _vm._v("\n                    akreditaciju i standardizaciju"),
+        _vm._v("\n          and design in industry"),
         _c("br"),
-        _vm._v("\n                    Takovska 5, Belgrade, Serbia"),
+        _vm._v("\n          Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia"),
         _c("br")
       ])
     ])
@@ -23291,21 +23519,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8 text-white h-auto" },
-      [
-        _c("div", { staticClass: "flex flex-wrap py-4 px-4" }, [
-          _c("div", { staticClass: "w-full sm:w-1/2" }, [
-            _c("p", [_vm._v("@2021 Journal of Quality Engineering")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "w-full sm:w-1/2" }, [
-            _c("p", { staticClass: "md:float-right" }, [_vm._v("Project Land")])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "w-full sm:w-1/2" }, [
+      _c("p", [_vm._v("@2021 Science of maintenance")])
+    ])
   }
 ]
 render._withStripped = true
@@ -23461,171 +23677,135 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-blue-700" }, [
-    _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-      _c(
-        "nav",
-        { staticClass: "flex items-center justify-between flex-wrap p-6" },
-        [
-          _c(
-            "div",
-            { staticClass: "flex items-center flex-shrink-0 text-white mr-6" },
-            [
-              _c("a", { attrs: { href: "/" } }, [
+  return _c("div", { staticClass: "bg-yellow-500" }, [
+    _c("div", { staticClass: "mx-auto sm:px-6 lg:px-8" }, [
+      _c("nav", { staticClass: "flex justify-between p-6 flex-wrap" }, [
+        _c(
+          "div",
+          { staticClass: "flex items-center flex-shrink-0 text-white mr-6" },
+          [
+            _c(
+              "a",
+              { staticClass: "flex flex-col space-y-1", attrs: { href: "/" } },
+              [
                 _c(
                   "span",
                   { staticClass: "font-semibold text-xl tracking-tight" },
-                  [_vm._v("Journal of Quality Engineering")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "block lg:hidden" }, [
-            _c(
-              "button",
-              {
-                staticClass:
-                  "flex items-center px-3 py-2 text-white hover:text-white",
-                on: { click: _vm.toggleMobileMenu }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "fill-current h-3 w-3",
-                    attrs: {
-                      viewBox: "0 0 20 20",
-                      xmlns: "http://www.w3.org/2000/svg"
-                    }
-                  },
-                  [
-                    _c("title", [_vm._v("Menu")]),
-                    _c("path", {
-                      attrs: {
-                        d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
-                      }
-                    })
-                  ]
-                )
+                  [_vm._v("Science of Maintenance")]
+                ),
+                _vm._v(" "),
+                _c("span", [_vm._v("International journal")])
               ]
             )
-          ]),
-          _vm._v(" "),
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "block lg:hidden" }, [
           _c(
-            "div",
+            "button",
             {
               staticClass:
-                "w-full block flex-grow lg:flex lg:items-center lg:w-auto",
-              class: { hidden: !_vm.showMobileMenu }
+                "flex items-center px-3 py-2 text-white hover:text-white",
+              on: { click: _vm.toggleMobileMenu }
             },
             [
-              _c("div", { staticClass: "text-lg lg:flex-grow" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/search" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Search\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/browse-issues" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Browse issues\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/instructions-for-authors" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Instructions for authors\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/about" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        About the journal\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/submit-a-paper" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Submit a paper\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "block mt-4 lg:inline-block md:mt-0 text-white hover:text-yellow-500 mr-4",
-                    attrs: { href: "/contact" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Contact\n                    "
-                    )
-                  ]
-                )
-              ])
+              _c(
+                "svg",
+                {
+                  staticClass: "fill-current h-3 w-3",
+                  attrs: {
+                    viewBox: "0 0 20 20",
+                    xmlns: "http://www.w3.org/2000/svg"
+                  }
+                },
+                [
+                  _c("title", [_vm._v("Menu")]),
+                  _vm._v(" "),
+                  _c("path", {
+                    attrs: { d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" }
+                  })
+                ]
+              )
             ]
-          ),
-          _vm._v(" "),
-          _vm._m(0)
-        ]
-      )
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "\n          w-full\n          block\n          flex-grow\n          lg:flex\n          lg:items-center\n          lg:w-auto\n          text-right\n        ",
+            class: { hidden: !_vm.showMobileMenu }
+          },
+          [
+            _c("div", { staticClass: "text-md lg:flex-grow" }, [
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/about" }
+                },
+                [_vm._v("\n            About the journal\n          ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/browse-issues" }
+                },
+                [_vm._v("\n            Browse issues\n          ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/instructions-for-authors" }
+                },
+                [_vm._v("\n            Instructions for authors\n          ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/submit-a-paper" }
+                },
+                [_vm._v("\n            Submit a paper\n          ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/contact" }
+                },
+                [_vm._v("\n            Contact\n          ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass:
+                    "\n              block\n              mt-4\n              lg:inline-block\n              md:mt-0\n              text-white\n              hover:text-gray-600\n              mr-4\n            ",
+                  attrs: { href: "/search" }
+                },
+                [_vm._v("\n            Search\n          ")]
+              )
+            ])
+          ]
+        )
+      ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "block lg:flex lg:items-center lg:w-auto" },
-      [_c("div", { staticClass: "relative inline-block text-left" })]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
