@@ -1,65 +1,71 @@
 <template>
-
-
-    <div class="slider">
+  <div class="slider">
     <ul class="slides" :style="style">
-      <li v-for="(slide,i) in playslides" :key="i">
-        <div class="img" :style="{ backgroundImage: `url(${slide.img})` }"></div>
+      <li v-for="(slide, i) in playslides" :key="i">
+        <div
+          class="img"
+          :style="{ backgroundImage: `url(${slide.img})` }"
+        ></div>
       </li>
     </ul>
     <ul class="indicators">
-      <li v-for="(slide,i) in slides" :key="i" @click="selectSlide(i)" :class="i==current ? 'active' : null">
+      <li
+        v-for="(slide, i) in slides"
+        :key="i"
+        @click="selectSlide(i)"
+        :class="i == current ? 'active' : null"
+      >
         <div class="item">
-          <span class="title">{{slide.title}}</span>
+          <span class="title">{{ slide.title }}</span>
           <span class="progress">
-            <div class="fill" :style="{ width: `${percent}%`}"></div>
+            <div class="fill" :style="{ width: `${percent}%` }"></div>
             <div class="dot"></div>
           </span>
-          <p class="mark">{{slide.mark}}</p>
+          <p class="mark">{{ slide.mark }}</p>
         </div>
       </li>
     </ul>
   </div>
-
-
-
-
 </template>
 
 <script>
-    export default {
-
-data() {
-   return {
-       slides: [
-      
-      {
-        img:
-          "/images/img2.jpg",
-        title: "Guide to CNC Machining Tolerances",
-        mark: "Monitoring & Safety"
-      },
-      {
-        img:
-          "/images/img3.jpg",
-        title: "All About Sheet Metal",
-        mark: "Materials"
-      },
-      {
-        img:
-          "/images/img4.jpg",
-        title: "From Computer Programming to Physical Products",
-        mark: "Programming"
-      }
-    ],
-    current: 0,
-    percent: 0,
-    timer: 0,
-    interval: 0,
-    progress: 0,
-    duration: 5000,
-    playslides: []
-   }
+export default {
+  data() {
+    return {
+      slides: [
+        {
+          img: "/images/maintenance.jpg",
+          title: "Maintenance within physical asset management",
+        },
+        {
+          img: "/images/maintenance-management.jpg",
+          title: "Maintenance management",
+        },
+        {
+          img: "/images/img4.jpg",
+          title: "Maintainability",
+        },
+        {
+          img: "/images/maintenance.jpg",
+          title: "Health, safety & environment in maintenance",
+        },
+        {
+          img: "/images/maintenance-management.jpg",
+          title: "Maintenance engineering techniques",
+        },
+        {
+          img: "/images/img4.jpg",
+          title: "Maintenance support",
+        },
+      ],
+      current: 0,
+      percent: 0,
+      timer: 0,
+      interval: 0,
+      progress: 0,
+      duration: 5000,
+      playslides: [],
+    };
   },
   computed: {
     style() {
@@ -69,14 +75,14 @@ data() {
         case 1:
           return { top: "-100%" };
       }
-    }
+    },
   },
   methods: {
-    selectSlide(i) {
+    /*selectSlide(i) {
       this.current = i;
       this.playslides[this.current % 2] = this.slides[this.current];
       this.resetPlay();
-    },
+    },*/
     process() {
       this.current++;
       if (this.current >= this.slides.length) {
@@ -85,10 +91,10 @@ data() {
       this.playslides[this.current % 2] = this.slides[this.current];
       this.resetPlay();
     },
-    going() {
+    /*going() {
       let time = new Date().getTime();
-      this.percent = Math.floor(100 * (time - this.timer) / this.duration);
-    },
+      this.percent = Math.floor((100 * (time - this.timer)) / this.duration);
+    },*/
     resetPlay() {
       clearInterval(this.interval);
       clearInterval(this.progress);
@@ -102,20 +108,17 @@ data() {
       this.timer = new Date().getTime();
       this.progress = setInterval(this.going, this.duration / 100);
       this.interval = setInterval(this.process, this.duration);
-    }
+    },
   },
   created() {
     this.playslides[0] = this.slides[0];
     this.playslides[1] = this.slides[1];
     this.play();
-
-  }
-}
-
+  },
+};
 </script>
 
 <style scoped>
-
 .slider {
   position: relative;
   z-index: 1;
@@ -131,7 +134,6 @@ data() {
   height: 100%;
   margin: 0;
   padding: 0;
-  transition: top 800ms;
 }
 .slider ul.slides li {
   height: 100%;
@@ -145,8 +147,7 @@ data() {
   position: absolute;
   padding-right: 40px;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 25%;
   z-index: 2;
   text-align: right;
 }
@@ -163,14 +164,12 @@ data() {
 }
 .slider ul.indicators li .title {
   color: #fff;
-  cursor: pointer;
   font-size: 16px;
-  font-family: 'Poppins';
-  transition: font-size 0.6s ease-out;
+  font-family: "Poppins";
 }
 .slider ul.indicators li .mark {
   color: #fff;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .slider ul.indicators li .dot {
   position: absolute;
@@ -189,16 +188,28 @@ data() {
   width: 100%;
   height: 2px;
   margin: 8px 0;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
-.slider ul.indicators li.active .title {
-  transition: font-size 0.6s ease-in;
+/*.slider ul.indicators li.active .title {
   font-size: 36px;
-  font-family: 'Poppins';
-}
+  font-family: "Poppins";
+}*/
 .slider ul.indicators li.active .progress .fill {
   height: 100%;
   background: #fff;
 }
 
+@media only screen and (max-width: 600px) {
+  .slider ul.indicators li .title {
+    font-size: 12px;
+  }
+  .slider ul.indicators {
+    position: absolute;
+    padding-right: 40px;
+    right: 0;
+    top: 15%;
+    z-index: 2;
+    text-align: right;
+  }
+}
 </style>

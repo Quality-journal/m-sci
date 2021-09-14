@@ -43,19 +43,19 @@ class ArticlesController extends Controller
     {
         $article = Article::create($request->except(['file']));
 
-        try{
-            $filename = Str::snake($request->title).".pdf";
-           // Storage::putFileAs("public/articles", $request->file, $filename);
-            Storage::disk('pub')->putFileAs('/articles_pdf/',$request->file,$filename);
+        try {
+            $filename = Str::snake($request->title) . ".pdf";
+            // Storage::putFileAs("public/articles", $request->file, $filename);
+            Storage::disk('pub')->putFileAs('/articles_pdf/', $request->file, $filename);
             $article->pdf = $filename;
             $article->slug = Str::slug($article->title);
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno sačuvan');
-        } catch(\Exception $e){
+        } catch (\Exception $e) {
             $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
 
-        return redirect('/articles?issue_id='.$article->issue_id);
+        return redirect('/articles?issue_id=' . $article->issue_id);
     }
 
 
@@ -95,9 +95,9 @@ class ArticlesController extends Controller
     {
         $article = Article::findOrFail($article->id);
 
-        try{
-            if($request->file){
-                $filename = Str::snake($request->title).".pdf";
+        try {
+            if ($request->file) {
+                $filename = Str::snake($request->title) . ".pdf";
                 Storage::disk('pub')->putFileAs("/articles_pdf/", $request->file, $filename);
                 $article->pdf = $filename;
             }
@@ -106,12 +106,11 @@ class ArticlesController extends Controller
             $article->slug = Str::slug($article->title);
             $article->save();
             $request->session()->flash('message', 'Članak je uspešno izmenjen');
-        } catch(\Exception $e){
-            
+        } catch (\Exception $e) {
             $request->session()->flash('message', 'Došlo je do greške. Pokušajte ponovo.');
         }
 
-        return redirect('/articles?issue_id='.$article->issue_id);
+        return redirect('/articles?issue_id=' . $article->issue_id);
     }
 
     /**
@@ -122,6 +121,7 @@ class ArticlesController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        $article->delete();
+        return redirect('/articles?issue_id=' . $article->issue_id)->with('message', 'Članak obrisan.');
     }
 }

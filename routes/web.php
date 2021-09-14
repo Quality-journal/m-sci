@@ -10,17 +10,6 @@ use App\Http\Controllers\SelectionController;
 use App\Http\Controllers\BrowseIssuesController;
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', [FrontController::class, 'index'])->name('index');
 Route::get('/contact', [FrontController::class, 'contact'])->name('contact');
 Route::get('/about', [FrontController::class, 'about'])->name('about');
@@ -48,9 +37,6 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('selections', SelectionController::class);
     Route::resource('issues', IssueController::class);
     Route::resource('articles', ArticlesController::class);
-
 });
 
-
-
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
