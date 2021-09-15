@@ -13,10 +13,11 @@
           <p class="text-xl font-semibold leading-6 text-orange">Publisher:</p>
           <p class="mt-1">
             IIPP<br />
-            Institute for research<br />
-            and design in industry<br />
-            Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia<br />
-            <a class="hover:text-orange" href="https://www.iipp.rs"
+            Institute for research<br>
+            and design in industry<br>
+            Vatroslava Lisinskog 12a<br>
+            11000 Belgrade, Serbia<br>
+            W: <a class="hover:text-orange" href="https://www.iipp.rs"
               >www.iipp.rs</a
             ><br />
             E:
@@ -42,7 +43,7 @@
             Editorial office:
           </p>
           <p class="mt-1">
-            Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia<br />
+            Vatroslava Lisinskog 12a<br>11000 Belgrade, Serbia<br>
             E:
             <a
               class="text-blue-600 hover:text-blue-800"

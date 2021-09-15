@@ -34,6 +34,8 @@
             lg:items-center
             lg:w-auto
             text-right
+            mb-5
+            pb-1
           "
           v-bind:class="{ hidden: !showMobileMenu }"
         >
