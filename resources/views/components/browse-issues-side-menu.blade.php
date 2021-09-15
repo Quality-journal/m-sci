@@ -6,7 +6,7 @@
     <a href="/selection/{{ $selection->slug }}"
         class="ml-5 p-2 mb-2 hover:text-yellow-500 font-bold">{{ $selection->title }}</a><i
         id="selection-{{ $selection->id }}" @click="toggleIssues{{ $key }} = !toggleIssues{{ $key }}"
-        class="float-right hover:text-orange fas fa-chevron-down cursor-pointer transition-all"></i><br>
+        class="float-right hover:text-yellow-500 fas fa-chevron-down cursor-pointer transition-all"></i><br>
 
     <ul class="mt-1 ml-5" id="issues-{{ $selection->id }}" v-show="toggleIssues{{ $key }}">
         @foreach($issues as $issue)

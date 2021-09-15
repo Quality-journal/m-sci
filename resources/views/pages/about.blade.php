@@ -12,7 +12,7 @@
                 <div class="w-3/4 sm:w-1/4 px-4 bg-gray-50 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-yellow-500 text-left">About the journal</p>
                     <a href="/editorial-office"
-                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-50 @endif">Editorial
+                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-500 @endif">Editorial
                         office</a><br>
                     <a href="/reviewers"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Reviewers</a><br>
