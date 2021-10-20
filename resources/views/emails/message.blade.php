@@ -1,10 +1,8 @@
-@component('mail::message',['message' => $message,'name'=>$name])
-# 
+@component('mail::message',['message' => $message,'email' => $email, 'name'=>$name])
+#
 
-{{$message}}
+Email: {{ $email }}<br>
+Ime: {{ $name }} <br>
+Poruka: {{$message}}
 
-
-
-Thanks,<br>
-{{ $name }}
 @endcomponent

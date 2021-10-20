@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Science of Maintenance | {{ ucfirst($page->title)   }}</x-slot>
+    <x-slot name="title">Science of Maintenance | {{ ucfirst($page->title) }}</x-slot>
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
@@ -11,9 +11,9 @@
 
                 <div class="w-3/4 sm:w-1/4 px-4 bg-gray-50 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-yellow-500 text-left">About the journal</p>
-                    <a href="/editorial-office"
+                    <a href="/editorial-board"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-500 @endif">Editorial
-                        office</a><br>
+                        Board</a><br>
                     <a href="/reviewers"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Reviewers</a><br>
                     <a href="/publishing-council"

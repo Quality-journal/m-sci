@@ -12,19 +12,20 @@
         <div class="w-full sm:w-1/3 px-8 text-lg">
           <p class="text-xl font-semibold leading-6 text-orange">Publisher:</p>
           <p class="mt-1">
-            IIPP<br />
-            Institute for research<br>
-            and design in industry<br>
-            Vatroslava Lisinskog 12a<br>
-            11000 Belgrade, Serbia<br>
-            W: <a class="hover:text-orange" href="https://www.iipp.rs"
+            <strong>IIPP</strong><br />
+            <strong>Institute for research</strong><br />
+            <strong>and design in industry</strong><br />
+            Vatroslava Lisinskog 12a,<br />
+            11000 Belgrade, Serbia<br />
+            W:
+            <a class="hover:text-orange" href="https://www.iipp.rs"
               >www.iipp.rs</a
             ><br />
             E:
             <a
               class="text-blue-600 hover:text-blue-800"
-              :href="'mailto: office@q-sci.rs'"
-              >office@q-sci.rs</a
+              :href="'mailto: office@iipp.rs'"
+              >office@iipp.rs</a
             >
           </p>
           <p class="text-xl font-semibold leading-6 mt-4 text-orange">
@@ -43,7 +44,7 @@
             Editorial office:
           </p>
           <p class="mt-1">
-            Vatroslava Lisinskog 12a<br>11000 Belgrade, Serbia<br>
+            Vatroslava Lisinskog 12a,<br />11000 Belgrade, Serbia<br />
             E:
             <a
               class="text-blue-600 hover:text-blue-800"

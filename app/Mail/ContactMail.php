@@ -19,11 +19,11 @@ class ContactMail extends Mailable
     public $name;
     public $email;
     public $message;
-    public function __construct($name,$email,$message)
+    public function __construct($name, $email, $message)
     {
-       $this->name=$name;
-       $this->email=$email;
-       $this->message=$message;
+        $this->name = $name;
+        $this->email = $email;
+        $this->message = $message;
     }
 
     /**
@@ -33,6 +33,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->from($this->email)->subject('q-sci.rs')->markdown('emails.message');
+        return $this->from($this->email)->subject('Poruka sa sajta m-sci.rs')->markdown('emails.message');
     }
 }
