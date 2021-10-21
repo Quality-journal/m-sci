@@ -23,7 +23,7 @@
         line-height: 2rem;
     }
 
-    .ck-content ul {
+    .ck-content ul, .ck-content ol {
         margin-left: 1.5rem;
     }
 }
