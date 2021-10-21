@@ -147,7 +147,7 @@ export default {
   position: absolute;
   padding-right: 40px;
   right: 0;
-  top: 25%;
+  top: 20%;
   z-index: 2;
   text-align: right;
 }
@@ -164,7 +164,7 @@ export default {
 }
 .slider ul.indicators li .title {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Poppins";
 }
 .slider ul.indicators li .mark {
@@ -201,7 +201,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .slider ul.indicators li .title {
-    font-size: 12px;
+    font-size: 14px;
   }
   .slider ul.indicators {
     position: absolute;
@@ -211,5 +211,11 @@ export default {
     z-index: 2;
     text-align: right;
   }
+}
+
+@media only screen and (max-width: 1700px) {
+    .slider ul.indicators {
+        top: 12%;
+    }
 }
 </style>

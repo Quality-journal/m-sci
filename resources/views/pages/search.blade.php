@@ -1,11 +1,10 @@
 <x-guest-layout>
 
     <x-slot name="title">{{ 'Search articles, issues, volumes' }}</x-slot>
-    <x-slot name="description">{{ 'Search the site, find articles, issues, volumes, science of maintenance journal' }}
-    </x-slot>
+    <x-slot name="description">{{ 'Search the site, find articles, issues, volumes, Science of Maintenance journal' }}</x-slot>
     <x-slot name="keywords">{{ 'search, find, articles, issues, volumes' }}</x-slot>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 min-h-screen pb-6 bg-white">
+    <div class="mx-auto sm:px-6 lg:px-8 min-h-screen pb-6 bg-white">
         <div class="text-black bg-white flex items-center justify-center pt-5 ">
             <form id="form" action="{{route('searching')}}" autocomplete="off">
                 <div class="border rounded overflow-hidden flex">
@@ -31,11 +30,9 @@
                 class="w-full sm:w-3/4 px-8 mt-3 border-2 mx-auto text-center border-solid border-gray-300 hover:border-yellow-500 hover:text-yellow-500">
                 <a href="{{$res->url()}}">
                     <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $res->title }}</h1>
-                </a>
-                <hr>
-                <h3>Type : {{  explode('\\', get_class($res))[2] }}</h3>
-                <hr>
-                <h3 class="mb-3">Title : {{$res->title}}</h3>
+                </a><hr>
+                <h3 class="my-1">Type : {{  explode('\\', get_class($res))[2] }}</h3><hr>
+                <h3 class="my-1">Title : {{ $res->title }}</h3>
             </div>
             @empty
             <div class="text-center text-3xl mt-10">No match!</div>
