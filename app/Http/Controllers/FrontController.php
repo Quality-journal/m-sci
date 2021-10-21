@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
+use App\Models\Image;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -14,7 +15,8 @@ class FrontController extends Controller
     public function index()
     {
         $page = Page::where('title', 'Home')->firstOrFail();
-        return view('welcome', ['page' => $page]);
+        $images = Image::orderBy('position')->get();
+        return view('welcome', ['page' => $page, 'images' => $images]);
     }
 
     public function contact()
@@ -48,8 +50,8 @@ class FrontController extends Controller
 
     public function reviewers()
     {
-        $page = Page::where('title', 'reviewers')->firstOrFail();
-        return view('pages.about', ['page' => $page, 'title' => 'Reviewers']);
+        $page = Page::where('title', 'review policy')->firstOrFail();
+        return view('pages.about', ['page' => $page, 'title' => 'Review policy']);
     }
 
     public function publishingCouncil()

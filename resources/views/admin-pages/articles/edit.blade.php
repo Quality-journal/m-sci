@@ -15,34 +15,27 @@
             </p>
             <span class="pb-4">
                 <a href="{{ route('articles.index', [ 'issue_id' => $article->issue_id ]) }}"
-                    class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i
-                        class="fas fa-arrow-left"></i> Nazad</a>
+                    class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded"><i class="fas fa-arrow-left"></i> Nazad</a>
             </span>
         </div>
 
         <div>
-            <form method="POST" action="{{ route('articles.update', $article->id) }}"
-                class="p-10 bg-white rounded shadow-xl" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('articles.update', $article->id) }}" class="p-10 bg-white rounded shadow-xl" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <input type="hidden" name="issue_id" value="{{ $article->issue_id }}">
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="title">Title</label>
-                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title"
-                        name="title" type="text" value="{{ $article->title }}" required>
-                </div>
-                <div class="mt-5">
-                    <label class="block text-gray-600 mb-2" for="info">Info</label>
-                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="info" name="info"
-                        type="text" value="{{ $article->info }}" required>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="title" name="title" type="text"
+                        value="{{ $article->title }}" required>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="doi">DOI</label>
-                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="doi" name="doi"
-                        type="text" value="{{ $article->doi }}" required>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="doi" name="doi" type="text" value="{{ $article->doi }}"
+                        required>
                 </div>
                 <div class="mt-5">
-                    <label class="block text-gray-600 mb-2" for="content">Content</label>
+                    <label class="block text-gray-600 mb-2" for="content">Scientific paper information</label>
                     <textarea class="editor" id="content" name="content">{{ $article->content }}</textarea>
                 </div>
                 <div class="mt-5">
@@ -50,18 +43,27 @@
                     <textarea class="editor" id="authors" name="authors">{{ $article->authors }}</textarea>
                 </div>
                 <div class="mt-5">
-                    <label class="block text-gray-600 mb-2" for="authors_names">Authors names</label>
-                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="authors_names"
-                        name="authors_names" type="text" value="{{ $article->authors_names }}" required>
+                    <label class="block text-gray-600 mb-2" for="authors_names">Authors (only names)</label>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="authors_names" name="authors_names" type="text"
+                        value="{{ $article->authors_names }}" required>
+                </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-2" for="keywords">Keywords</label>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="keywords" name="keywords" type="text" required
+                        value="{{ $article->keywords }}">
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="abstract">Abstract</label>
                     <textarea class="editor" id="abstract" name="abstract">{{ $article->abstract }}</textarea>
                 </div>
                 <div class="mt-5">
-                    <label class="block text-gray-600 mb-2" for="recognitions">Recognitions</label>
-                    <textarea class="editor" id="recognitions"
-                        name="recognitions">{{ $article->recognitions }}</textarea>
+                    <label class="block text-gray-600 mb-2" for="howto">How to cite this paper</label>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="howto" name="howto" type="text"
+                        value="{{ $article->howto }}">
+                </div>
+                <div class="mt-5">
+                    <label class="block text-gray-600 mb-2" for="recognitions">Acknowledgement</label>
+                    <textarea class="editor" id="recognitions" name="recognitions">{{ $article->recognitions }}</textarea>
                 </div>
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-2" for="reference">Reference</label>
@@ -80,8 +82,7 @@
                         </div>
                         <div class="w-full sm:w-1/4 ml-20 mt-10">
                             <label class="text-sm">Current file:</label><br>
-                            <span class="font-italic text-xs md:text-sm text-blue-500 hover:text-blue-600"><a
-                                    href="/articles_pdf/{{ $article->pdf }}"
+                            <span class="font-italic text-xs md:text-sm text-blue-500 hover:text-blue-600"><a href="/articles_pdf/{{ $article->pdf }}"
                                     target="_blank">{{ $article->title }}</a></span>
                         </div>
                     </div>
@@ -89,8 +90,7 @@
                 </div>
 
                 <div class="mt-6">
-                    <button type="submit"
-                        class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded">Submit</button>
+                    <button type="submit" class="px-4 py-1 text-white font-light tracking-wider bg-gray-900 rounded">Submit</button>
                 </div>
             </form>
         </div>
