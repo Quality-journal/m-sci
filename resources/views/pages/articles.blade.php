@@ -16,7 +16,10 @@
                     <hr>
                     <div class="flex py-4">
                         <img class="h-52" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
-                        <h2 class="px-10 py-2 font-semibold text-2xl">{{ $currentIssue->title }}</h2>
+                        <div class="px-10">
+                            <h2 class="py-2 font-semibold text-2xl">{{ $currentIssue->title }}</h2>
+                            <div>{!! $currentIssue->description !!}</div>
+                        </div>
                     </div>
                     <hr>
                     <div class="flex flex-wrap -m-4 text-center mt-2">

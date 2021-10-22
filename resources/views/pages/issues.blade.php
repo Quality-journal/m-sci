@@ -20,11 +20,14 @@
                         <div class="px-4 w-full">
                             <div class="py-2 text-left flex border-b">
                                 <img class="h-20" src="{{ asset('/images/'.$issue->image) }}" alt="{{ $issue->title }}">
-                                <h3 class="px-4 pt-6 title-font font-medium text-xl text-gray-900">
-                                    <a class="hover:text-yellow-500 transition-all"
-                                        href="/issue/{{ $currentSelection->slug }}/{{ $issue->slug }}">
-                                        {{ $issue->title }} </a>
-                                </h3>
+                                <div>
+                                    <h3 class="px-4 pt-2 title-font font-medium text-xl text-gray-900">
+                                        <a class="hover:text-yellow-500 transition-all" href="/issue/{{ $currentSelection->slug }}/{{ $issue->slug }}">
+                                            {{ $issue->title }} </a>
+                                    </h3>
+                                    <div class="px-4">{!! $issue->description !!}</div>
+                                </div>
+
                             </div>
                         </div>
                         @endforeach
