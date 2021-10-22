@@ -24,8 +24,7 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
     <style>
         body {
@@ -41,8 +40,7 @@
 
         <navigation-component></navigation-component>
         @if(Session::has('message'))
-        <div
-            class="message flex justify-center items-center my-4 font-medium py-3 px-2 bg-white rounded-md text-green-700 bg-green-100 border border-green-300 ">
+        <div class="message flex justify-center items-center my-4 font-medium py-3 px-2 bg-white rounded-md text-green-700 border border-green-300 ">
             <div class="ml-2">
                 <i class="fas fa-check"></i>
             </div>
@@ -57,8 +55,17 @@
         {{ $slot }}
 
         <footer-component></footer-component>
-
     </div>
+
+    <script>
+        document.querySelectorAll('.ck-content').forEach(function(element) {
+            element.querySelectorAll('p').forEach(function(p){
+                if(p.innerHTML === '&nbsp;' || p.innerHTML === ''){
+                    p.style.fontSize = '0.5rem';
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

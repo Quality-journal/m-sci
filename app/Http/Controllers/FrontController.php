@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Page;
 use App\Models\Image;
+use App\Models\Document;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -32,14 +33,15 @@ class FrontController extends Controller
 
     public function instructions()
     {
+        $documents = Document::all();
         $page = Page::where('slug', 'instructions-for-authors')->firstOrFail();
-        return view('pages.instructions', ['page' => $page]);
+        return view('pages.instructions', ['page' => $page, 'documents' => $documents]);
     }
 
     public function submit_a_paper()
     {
         $page = Page::where('slug', 'submit-a-paper')->firstOrFail();
-        return view('pages.instructions', ['page' => $page]);
+        return view('pages.submit-paper', ['page' => $page]);
     }
 
     public function editorialOffice()
@@ -50,8 +52,8 @@ class FrontController extends Controller
 
     public function reviewers()
     {
-        $page = Page::where('title', 'review policy')->firstOrFail();
-        return view('pages.about', ['page' => $page, 'title' => 'Review policy']);
+        $page = Page::where('title', 'review process')->firstOrFail();
+        return view('pages.about', ['page' => $page, 'title' => 'Review process']);
     }
 
     public function publishingCouncil()

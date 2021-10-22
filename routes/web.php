@@ -7,6 +7,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\DocumentsController;
 use App\Http\Controllers\SelectionController;
 use App\Http\Controllers\BrowseIssuesController;
 
@@ -17,7 +18,7 @@ Route::get('/about', [FrontController::class, 'about'])->name('about');
 Route::get('/instructions-for-authors', [FrontController::class, 'instructions'])->name('instructions');
 Route::get('/submit-a-paper', [FrontController::class, 'submit_a_paper'])->name('submit_a_paper');
 Route::get('/editorial-board', [FrontController::class, 'editorialOffice'])->name('editorialOffice');
-Route::get('/review-policy', [FrontController::class, 'reviewers'])->name('reviewers');
+Route::get('/review-process', [FrontController::class, 'reviewers'])->name('reviewers');
 Route::get('/publishing-council', [FrontController::class, 'publishingCouncil'])->name('publishingCouncil');
 Route::get('/ethics-and-policy', [FrontController::class, 'ethicsAndPolicy'])->name('ethicsAndPolicy');
 Route::get('/search', [SearchController::class, 'index'])->name('search');
@@ -39,6 +40,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('issues', IssueController::class);
     Route::resource('articles', ArticlesController::class);
     Route::resource('photos', ImagesController::class);
+    Route::resource('documents', DocumentsController::class);
 });
 
 require __DIR__ . '/auth.php';

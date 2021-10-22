@@ -29,7 +29,7 @@
                     <textarea class="editor" id="content" name="content">{{ $page->content }}</textarea>
                 </div>
 
-                @if($page->title == 'Review policy')
+                @if($page->title == 'Review process')
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="gratitude">Gratitude block</label>
                     <textarea class="editor" id="gratitude" name="gratitude">{{ $page->gratitude }}</textarea>

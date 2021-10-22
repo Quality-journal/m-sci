@@ -1,14 +1,14 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ 'Stranice' }}
+            {{ 'Dokumenta' }}
         </h2>
     </x-slot>
 
-    <x-slot name="title">{{ 'Stranice' }}</x-slot>
+    <x-slot name="title">{{ 'Dokumenta' }}</x-slot>
 
     <main class="w-full flex-grow p-6 min-h-screen">
-        <h1 class="text-3xl text-black pb-4">Stranice</h1>
+        <h1 class="text-3xl text-black pb-4">Dokumenta</h1>
 
         @if(Session::has('message'))
         <div class="message flex justify-center items-center my-4 font-medium py-3 px-2 bg-white rounded-md text-green-700 border border-green-300 ">
@@ -29,15 +29,18 @@
                 <table class="min-w-full border-collapse">
                     <thead class="bg-gray-800 text-white">
                         <tr>
-                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Stranice</th>
+                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Dokumenta</th>
+                            <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Link</th>
                             <th class="w-1/3 text-right py-3 px-4 uppercase font-semibold text-sm">Opcije</th>
                         </tr>
                     </thead>
                     <tbody class="text-gray-700">
-                        @foreach($pages as $page)
+                        @foreach($documents as $document)
                         <tr>
-                            <td class="w-1/3 text-left py-3 px-4">{{ $page->title }}</td>
-                            <td class="w-1/3 text-right py-3 px-4"><a href="{{ route('pages.edit', $page->id)}}"><i class="fas fa-edit text-blue-500"></i></a>
+                            <td class="w-1/3 text-left py-3 px-4">{{ $document->title }}</td>
+                            <td class="w-1/3 text-left py-3 px-4">https://m-sci.rs/files/{{ $document->path }}</td>
+                            <td class="w-1/3 text-right py-3 px-4"><a href="{{ route('documents.edit', $document)}}"><i
+                                        class="fas fa-edit text-blue-500"></i></a>
                             </td>
                         </tr>
                         @endforeach

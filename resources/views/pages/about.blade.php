@@ -17,8 +17,8 @@
                     <a href="/ethics-and-policy"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('ethicsAndPolicy')) text-yellow-500 @endif">Ethics
                         and policy</a><br>
-                    <a href="/review-policy" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Review
-                        policy</a><br>
+                    <a href="/review-process" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Review
+                        process</a><br>
                     <a href="/publishing-council"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('publishingCouncil')) text-yellow-500 @endif">Publishing
                         council</a><br>
@@ -29,13 +29,13 @@
                     <h1 class="text-2xl font-semibold mt-2 pb-4 py-2 text-yellow-500">{{ $title }}</h1>
                     <hr>
 
-                    <div class="mt-3 ck-content">{!! $page->content !!}</div>
-
                     @if(Route::is('reviewers'))
                     <div class="bg-gray-100 w-full px-4 py-2 mt-3">
                         <p>{!! $page->gratitude !!}</p>
                     </div>
                     @endif
+
+                    <div class="mt-3 ck-content">{!! $page->content !!}</div>
                 </div>
             </div>
 
