@@ -9,7 +9,7 @@
 
             <div class="flex flex-wrap py-4">
 
-                <div class="w-3/4 sm:w-1/4 px-4 bg-gray-200 py-2 mt-3">
+                <div class="w-full sm:w-1/4 px-4 bg-gray-200 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-yellow-500 text-left">About the journal</p>
                     <a href="/editorial-board"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-500 @endif">Editorial

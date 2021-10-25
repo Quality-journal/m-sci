@@ -9,6 +9,7 @@ use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 
 
 class FrontController extends Controller
@@ -70,8 +71,10 @@ class FrontController extends Controller
 
     public function sendmail(Request $request)
     {
-
-        Mail::to('aleksandarmarkovic127@gmail.com')->send(new ContactMail($request->name, $request->email, $request->message));
+        Validator::make($request->all(), [
+            'g-recaptcha-response' => 'required|recaptchav3:contactme,0.5'
+        ]);
+        Mail::to('nstamenkovski@projectland.rs')->send(new ContactMail($request->name, $request->email, $request->message));
         return back()->with(['message' => 'Message sent!']);
     }
 }

@@ -12,12 +12,11 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">Science of Maintenance</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $currentIssue->title }}</h1>
                     <hr>
-                    <div class="flex py-4">
-                        <img class="h-52" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
+                    <div class="flex py-4 flex-col sm:flex-row">
+                        <img class="" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
                         <div class="px-10">
-                            <h2 class="py-2 font-semibold text-2xl">{{ $currentIssue->title }}</h2>
                             <div>{!! $currentIssue->description !!}</div>
                         </div>
                     </div>

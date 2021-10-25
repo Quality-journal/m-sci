@@ -13,7 +13,7 @@
                 <div class="ck-content w-full sm:w-3/4">
                     {!! $page->content !!}
                 </div>
-                <div class="w-full md:w-1/4 flex flex-row md:flex-col md:space-y-5 justify-between sm:justify-start items-center">
+                <div class="w-full md:w-1/4 flex flex-row md:flex-col md:space-y-5 justify-around sm:justify-start items-center">
                     <div
                         class="w-20 md:w-24 h-20 md:h-24 inline-flex items-center justify-center rounded-full text-xs md:text-sm bg-gray-600 text-white cursor-pointer hover:bg-opacity-90 transition-all">
                         <div class="font-bold text-center"><a href="{{ asset('/files/'.$documents[0]->path) }}" target="_blank"><i

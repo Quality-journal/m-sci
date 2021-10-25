@@ -1,6 +1,6 @@
-<div class="w-3/4 sm:w-1/4 px-6 bg-gray-200 py-2 mt-3 h-64 min-h-full">
+<div class="w-full sm:w-1/4 px-6 bg-gray-200 py-2 mt-3 h-64 min-h-full">
 
-    <p class="text-xl font-semibold mb-5 text-dark border-b border-solid border-black text-left pb-2">Selections</p>
+    <p class="text-xl font-semibold mb-5 text-dark border-b border-solid border-black text-left pb-2">Browse issues</p>
 
     @foreach($selections as $key => $selection)
     <a href="/selection/{{ $selection->slug }}" class="ml-5 p-2 mb-2 hover:text-yellow-500 font-bold">{{ $selection->title }}</a><i
