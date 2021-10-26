@@ -15,9 +15,9 @@
                     <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $currentIssue->title }}</h1>
                     <hr>
                     <div class="flex py-4 flex-col sm:flex-row">
-                        <img class="" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
-                        <div class="px-10">
-                            <div>{!! $currentIssue->description !!}</div>
+                        <img class="sm:h-52" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
+                        <div class="px-0 sm:px-10 pt-4 sm:pt-0">
+                            {!! $currentIssue->description !!}
                         </div>
                     </div>
                     <hr>
