@@ -12,12 +12,13 @@
                 @include('components.browse-issues-side-menu')
 
                 <div class="w-full sm:w-3/4 px-8">
-                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">Science of Maintenance</h1>
+                    <h1 class="text-2xl font-semibold mt-2 pb-4 text-dark">{{ $currentIssue->title }}</h1>
                     <hr>
-                    <div class="flex py-4">
-                        <img class="h-52" src="{{ asset('/images/'.$currentIssue->image) }}"
-                            alt="{{ $currentIssue->title }}">
-                        <h2 class="px-10 py-2 font-semibold text-2xl">{{ $currentIssue->title }}</h2>
+                    <div class="flex py-4 flex-col sm:flex-row">
+                        <img class="sm:h-52" src="{{ asset('/images/'.$currentIssue->image) }}" alt="{{ $currentIssue->title }}">
+                        <div class="px-0 sm:px-10 pt-4 sm:pt-0">
+                            {!! $currentIssue->description !!}
+                        </div>
                     </div>
                     <hr>
                     <div class="flex flex-wrap -m-4 text-center mt-2">
@@ -25,20 +26,16 @@
                         <div class="px-4 w-full">
                             <div class="flex flex-wrap text-left border-b py-4">
                                 <h3 class="w-full title-font font-medium text-xl">
-                                    <a class="text-center text-yellow-500 hover:text-yellow-700 transition-all"
-                                        href="/article/{{ $article->slug }}"> {{ $article->title }} </a>
+                                    <a class="text-center text-yellow-500 hover:text-yellow-700 transition-all" href="/article/{{ $article->slug }}"> {{
+                                        $article->title }} </a>
                                 </h3>
-                                <p class="w-full text-lg mt-3">{{ $article->authors_names }}</p>
+                                <p class="w-full text-lg mt-3">{{ $article->authors_names }} - {{ $article->doi }}</p>
                                 <a href="/article/{{ $article->slug }}"
                                     class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">View
                                     More <i class="fas fa-arrow-right ml-2"></i> </a>
                                 <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank"
                                     class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">Download
                                     <i class="fas fa-download ml-2"></i> </a>
-                                {{-- <div>
-                                    <p class="mt-3">Downloads: 100</p>
-                                    <p>Views: 250</p>
-                                </div> --}}
                             </div>
                         </div>
                         @endforeach

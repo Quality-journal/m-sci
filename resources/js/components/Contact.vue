@@ -10,27 +10,11 @@
           <contact-form-component></contact-form-component>
         </div>
         <div class="w-full sm:w-1/3 px-8 text-lg">
-          <p class="text-xl font-semibold leading-6 text-orange">Publisher:</p>
-          <p class="mt-1">
-            IIPP<br />
-            Institute for research<br />
-            and design in industry<br />
-            Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia<br />
-            <a class="hover:text-orange" href="https://www.iipp.rs"
-              >www.iipp.rs</a
-            ><br />
-            E:
-            <a
-              class="text-blue-600 hover:text-blue-800"
-              :href="'mailto: office@q-sci.rs'"
-              >office@q-sci.rs</a
-            >
-          </p>
           <p class="text-xl font-semibold leading-6 mt-4 text-orange">
             Editor in chief:
           </p>
           <p class="mt-1">
-            Nada Stanojević<br />
+            Dr Nada Stanojević<br />
             E:
             <a
               class="text-blue-600 hover:text-blue-800"
@@ -42,12 +26,37 @@
             Editorial office:
           </p>
           <p class="mt-1">
-            Vatroslava Lisinskog 12a, 11000 Belgrade, Serbia<br />
+            Kraljice Marije 16,<br />11000 Belgrade, Serbia<br />
             E:
             <a
               class="text-blue-600 hover:text-blue-800"
               :href="'mailto: office@m-sci.rs'"
               >office@m-sci.rs</a
+            >
+          </p>
+          <p class="mt-4 text-xl font-semibold leading-6 text-orange">
+            Publisher:
+          </p>
+          <p class="mt-1">
+            <strong>Institute for research</strong><br />
+            <strong>and design in industry</strong><br />
+            E:
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              :href="'mailto: office@iipp.rs'"
+              >office@iipp.rs</a
+            >
+          </p>
+          <p class="mt-4 text-xl font-semibold leading-6 text-orange">
+            Co-Publisher:
+          </p>
+          <p class="mt-1">
+            <strong>Serbian Maintenance Society</strong><br />
+            E:
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              :href="'mailto: office@dots.rs'"
+              >office@dots.rs</a
             >
           </p>
         </div>

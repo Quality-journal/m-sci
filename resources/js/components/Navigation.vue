@@ -3,8 +3,8 @@
     <div class="mx-auto sm:px-6 lg:px-8">
       <nav class="flex justify-between p-6 flex-wrap">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <a class="flex flex-col space-y-1" :href="'/'"
-            ><span class="font-semibold text-xl tracking-tight"
+          <a class="flex flex-col space-y-1" :href="'/'">
+            <span class="font-semibold text-xl tracking-tight"
               >Science of Maintenance</span
             >
             <span>International journal</span>
@@ -32,10 +32,10 @@
             w-full
             block
             flex-grow
-            lg:flex
-            lg:items-center
-            lg:w-auto
+            lg:flex lg:items-center lg:w-auto
             text-right
+            mb-5
+            pb-1
           "
           v-bind:class="{ hidden: !showMobileMenu }"
         >
@@ -80,10 +80,8 @@
                 hover:text-gray-600
                 mr-4
               "
+              >Instructions for authors</a
             >
-              Instructions for authors
-            </a>
-
             <a
               :href="'/submit-a-paper'"
               class="
@@ -95,9 +93,8 @@
                 hover:text-gray-600
                 mr-4
               "
+              >Submit a paper</a
             >
-              Submit a paper
-            </a>
             <a
               :href="'/contact'"
               class="
@@ -109,9 +106,8 @@
                 hover:text-gray-600
                 mr-4
               "
+              >Contact</a
             >
-              Contact
-            </a>
             <a
               :href="'/search'"
               class="
@@ -123,9 +119,8 @@
                 hover:text-gray-600
                 mr-4
               "
+              >Search</a
             >
-              Search
-            </a>
           </div>
         </div>
       </nav>

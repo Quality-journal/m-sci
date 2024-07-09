@@ -9,13 +9,16 @@ use App\Models\Article;
 
 class BrowseIssuesController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         $selections = Selection::all();
         $issues = Issue::all();
-        return view('pages.browse-issues', ['selections' => $selections, 'issues' => $issues, 'title' => 'Browse issues']);
+        $issue = Issue::whereHas('articles')->orderBy('created_at', 'desc')->get()->first();
+        return view('pages.browse-issues', ['selections' => $selections, 'issue' => $issue, 'issues' => $issues]);
     }
 
-    public function issues() {
+    public function issues()
+    {
         $slug = last(request()->segments());
         $selection = Selection::where('slug', $slug)->firstOrFail();
         $selectedIssues = Issue::where('selection_id', $selection->id)->get();
@@ -24,7 +27,8 @@ class BrowseIssuesController extends Controller
         return view('pages.issues', ['selectedIssues' => $selectedIssues, 'issues' => $issues, 'selections' => $selections, 'currentSelection' => $selection]);
     }
 
-    public function articles() {
+    public function articles()
+    {
         $slug = last(request()->segments());
         $selectionSlug = request()->segments()[1];
         $issueSelection = Selection::where('slug', $selectionSlug)->firstOrFail();
@@ -35,7 +39,8 @@ class BrowseIssuesController extends Controller
         return view('pages.articles', ['articles' => $articles, 'issues' => $issues, 'selections' => $selections, 'currentIssue' => $issue]);
     }
 
-    public function article() {
+    public function article()
+    {
         $slug = last(request()->segments());
         $article = Article::where('slug', $slug)->firstOrFail();
         $selections = Selection::all();

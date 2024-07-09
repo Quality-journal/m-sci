@@ -31,7 +31,7 @@
 
                 <div class="mt-5">
                     <label class="block text-gray-600 mb-1" for="slug">Slug</label>
-                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="slug" name="slug" type="text" required="" aria-label="slug" value="{{$selection->slug}}" disabled>
+                    <input class="w-full px-5 py-2 text-gray-700 bg-gray-200 rounded border-none" id="slug" name="slug" type="text" required="" aria-label="slug" value="{{$selection->slug}}">
                 </div>
 
                 <div class="mt-5">

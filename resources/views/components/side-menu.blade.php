@@ -8,9 +8,17 @@
             <i class="fas fa-sticky-note mr-3"></i>
             Stranice
         </a>
+        <a href="{{ route('photos.index') }}" class="flex items-center text-white py-4 pl-6 nav-item @if(Route::is('photos.*')) active-nav-link @endif">
+            <i class="fas fa-image mr-3"></i>
+            Slike za početnu
+        </a>
         <a href="{{ route('selections.index') }}" class="flex items-center text-white py-4 pl-6 nav-item @if(Route::is('selections.*')) active-nav-link @endif">
             <i class="fas fa-scroll mr-3"></i>
             Selekcije
+        </a>
+        <a href="{{ route('documents.index') }}" class="flex items-center text-white py-4 pl-6 nav-item @if(Route::is('documents.*')) active-nav-link @endif">
+            <i class="fas fa-file mr-3"></i>
+            Dokumenta
         </a>
     </nav>
 </aside>

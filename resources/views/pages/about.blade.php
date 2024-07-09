@@ -1,6 +1,6 @@
 <x-guest-layout>
 
-    <x-slot name="title">Science of Maintenance | {{ ucfirst($page->title)   }}</x-slot>
+    <x-slot name="title">Science of Maintenance | {{ ucfirst($page->title) }}</x-slot>
     <x-slot name="description">{{ $page->description }}</x-slot>
     <x-slot name="keywords">{{ $page->keywords }}</x-slot>
 
@@ -9,19 +9,20 @@
 
             <div class="flex flex-wrap py-4">
 
-                <div class="w-3/4 sm:w-1/4 px-4 bg-gray-50 py-2 mt-3">
+                <div class="w-full sm:w-1/4 px-4 bg-gray-200 py-2 mt-3">
                     <p class="text-lg font-semibold mb-1 text-yellow-500 text-left">About the journal</p>
-                    <a href="/editorial-office"
-                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-50 @endif">Editorial
-                        office</a><br>
-                    <a href="/reviewers"
-                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Reviewers</a><br>
-                    <a href="/publishing-council"
-                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('publishingCouncil')) text-yellow-500 @endif">Publishing
-                        council</a><br>
+                    <a href="/editorial-board"
+                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('editorialOffice')) text-yellow-500 @endif">Editorial
+                        board</a><br>
                     <a href="/ethics-and-policy"
                         class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('ethicsAndPolicy')) text-yellow-500 @endif">Ethics
                         and policy</a><br>
+                    <a href="/review-process" class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('reviewers')) text-yellow-500 @endif">Review
+                        process</a><br>
+                    <a href="/publishing-council"
+                        class="ml-5 p-2 hover:text-yellow-500 transition-all @if (Route::is('publishingCouncil')) text-yellow-500 @endif">Publishing
+                        council</a><br>
+
                 </div>
 
                 <div class="w-full sm:w-3/4 px-8">
@@ -30,7 +31,7 @@
 
                     @if(Route::is('reviewers'))
                     <div class="bg-gray-100 w-full px-4 py-2 mt-3">
-                        <p>Blok zahvalnosti</p>
+                        <p>{!! $page->gratitude !!}</p>
                     </div>
                     @endif
 
