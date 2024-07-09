@@ -7,9 +7,9 @@ use App\Models\Image;
 use App\Models\Document;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Lunaweb\RecaptchaV3\Facades\RecaptchaV3;
 
 
 class FrontController extends Controller
@@ -74,7 +74,7 @@ class FrontController extends Controller
         Validator::make($request->all(), [
             'g-recaptcha-response' => 'required|recaptchav3:contactme,0.5'
         ]);
-        Mail::to('')->send(new ContactMail($request->name, $request->email, $request->message));
+        Mail::to('office@m-sci.rs')->send(new ContactMail($request->name, $request->email, $request->message));
         return back()->with(['message' => 'Message sent!']);
     }
 }

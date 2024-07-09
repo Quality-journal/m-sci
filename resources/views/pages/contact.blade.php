@@ -77,7 +77,7 @@
                                     "></textarea>
                                         </div>
                                     </div>
-                                    {!! RecaptchaV3::field('contactme') !!}
+                                    {{-- {!! Lunaweb\RecaptchaV3\Facades\RecaptchaV3::field('contactme') !!} --}}
                                 </div>
                                 <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 formdiv">
                                     <button type="submit" class="
@@ -139,4 +139,7 @@
         </div>
     </div>
 
+    <<<<<<< HEAD </x-guest-layout>
+        =======
 </x-guest-layout>
+>>>>>>> cdb8c03 (latest version)

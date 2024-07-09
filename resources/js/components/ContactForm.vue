@@ -1,12 +1,6 @@
 <template>
   <div>
-    <form
-      action="/sendmail"
-      ref="form"
-      method="get"
-      id="form"
-      @submit.prevent="submitRecaptcha"
-    >
+    <form action="/sendmail" method="get">
       <div class="shadow overflow-hidden">
         <div class="px-4 py-5 sm:p-6 formdiv">
           <div class="grid grid-cols-6 gap-6">
@@ -19,13 +13,14 @@
                 type="text"
                 id="name"
                 name="name"
-                required="required"
+                required
                 class="
                   w-full
                   bg-white
                   rounded
                   border border-gray-300
-                  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200
+                  focus:border-indigo-500
+                  focus:ring-2 focus:ring-indigo-200
                   text-base
                   outline-none
                   text-gray-700
@@ -53,7 +48,8 @@
                   bg-white
                   rounded
                   border border-gray-300
-                  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200
+                  focus:border-indigo-500
+                  focus:ring-2 focus:ring-indigo-200
                   text-base
                   outline-none
                   text-gray-700
@@ -65,7 +61,6 @@
                   ease-in-out
                 "
               />
-              <input type="hidden" name="captcha" id="captcha" />
             </div>
             <div class="col-span-12">
               <label for="name" class="leading-7 text-sm text-gray-600"
@@ -81,7 +76,8 @@
                   bg-white
                   rounded
                   border border-gray-300
-                  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200
+                  focus:border-indigo-500
+                  focus:ring-2 focus:ring-indigo-200
                   h-32
                   text-base
                   outline-none
@@ -132,12 +128,7 @@ export default {
     };
   },
   methods: {
-    submitRecaptcha() {
-      this.$recaptcha("contact").then((token) => {
-        document.getElementById("captcha").value = token;
-        document.getElementById("form").submit();
-      });
-    },
+    submitForm(event) {},
   },
 };
 </script>

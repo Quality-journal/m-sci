@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://m-sci.rs/</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/browse-issues</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/selection/sm-number-1-year-2021-volume-1</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/issue/sm-number-1-year-2021-volume-1/Volume_1_1</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/selection/2022</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/issue/2022/Volume_2_1</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/issue/2022/Volume_2_2</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/software-maintenance-packages</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/software_maintenance_packages.pdf</loc>
+  <lastmod>2022-09-28T13:40:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/piv-method-maintenance-exploitation-and-method-finalization</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/p_i_v_method,_maintenance,_exploitation_and_method_finalization.pdf</loc>
+  <lastmod>2022-09-28T13:28:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/effect-of-different-fff-3d-printing-materials-on-surface-roughness-dimensional-and-mass-accuracy</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/effect_of_different_f_f_f3_d_printing_materials_on_surface_roughness,_dimensional_and_mass_accuracy.pdf</loc>
+  <lastmod>2022-09-28T13:40:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/mirce-science-approach-to-maintenance-of-microbial-contamination-of-fuel-tanks-in-covid-19-grounded-aircraft</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/m_i_r_c_e_science_approach_to_maintenance_of_microbial_contamination_of_fuel_tanks_in_c_o_v_i_d-19_grounded_aircraft.pdf</loc>
+  <lastmod>2021-10-21T08:47:48+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/maintenance-and-maintainability-within-agile-software-development</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/maintenance_and_maintainability_within_agile_software_development.pdf</loc>
+  <lastmod>2021-10-21T11:17:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/a-contribution-to-identification-of-the-port-machinery-maintenance-importance</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/a_contribution_to_identification_of_the_port_machinery_maintenance_importance.pdf</loc>
+  <lastmod>2021-10-21T11:25:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/digitization-of-fleet-maintenance-systems-as-an-option-to-improve-the-maintainability-function</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/digitization_of_fleet_maintenance_systems_as_an_option_to_improve_the_maintainability_function.pdf</loc>
+  <lastmod>2021-10-21T11:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/article/cooperative-maintenance-for-small-and-medium-sized-enterprises-smes-a-concept-for-new-organizational-forms-of-maintenance</loc>
+  <lastmod>2022-12-01T15:05:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://m-sci.rs/articles_pdf/cooperative_maintenance_for_small_and_medium-sized_enterprises(_s_m_es)-_a_concept_for_new_organizational_forms_of_maintenance.pdf</loc>
+  <lastmod>2021-10-21T11:28:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
