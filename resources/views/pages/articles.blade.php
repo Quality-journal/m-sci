@@ -30,11 +30,9 @@
                                         $article->title }} </a>
                                 </h3>
                                 <p class="w-full text-lg mt-3">{{ $article->authors_names }} - {{ $article->doi }}</p>
-                                <a href="/article/{{ $article->slug }}"
-                                    class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">View
+                                <a href="/article/{{ $article->slug }}" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">View
                                     More <i class="fas fa-arrow-right ml-2"></i> </a>
-                                <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank"
-                                    class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">Download
+                                <a href="{{ asset('/articles_pdf/'.$article->pdf) }}" target="_blank" class="text-lg px-4 py-3 mt-3 mr-4 bg-gray-100 hover:bg-yellow-500 hover:text-white transition-all">Download
                                     <i class="fas fa-download ml-2"></i> </a>
                             </div>
                         </div>
